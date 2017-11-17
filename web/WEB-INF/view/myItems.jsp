@@ -112,7 +112,7 @@
         columns:[
             
             {
-                title:'余额',
+                title:'金额',
                 field:'money',
                 align:'center',
 				
@@ -140,10 +140,10 @@
                 field:'status',
                 align:'center',
                 formatter: function (value, row, index) {
-                    if(value==1){
-                        return '<i class="fa fa-check" style="color:green"></i>';
-                    }else{
-                        return '<i class="fa fa-close" style="color:red"></i>';
+                   if(value==1){
+                            return '<i class="fa fa-check" style="color:green"></i>';
+                        }else{
+                            return '<i class="fa fa-close" style="color:red"></i>';
                     }
                 }
             }

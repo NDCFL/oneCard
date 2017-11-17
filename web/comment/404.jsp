@@ -36,17 +36,11 @@
 
     <div class="error-desc">
         抱歉，页面好像去火星了~
-        <form class="form-inline m-t" role="form">
-            <div class="form-group">
-                <input type="email" class="form-control" placeholder="请输入您需要查找的内容 …">
-            </div>
-            <button type="submit" class="btn btn-primary">搜索</button>
-        </form>
+
     </div>
 </div>
 <script src="<%=path%>/static/js/jquery.min.js?v=2.1.4"></script>
 <script src="<%=path%>/static/js/bootstrap.min.js?v=3.3.5"></script>
-<script type="text/javascript" src="http://tajs.qq.com/stats?sId=9051096" charset="UTF-8"></script>
 </body>
 
 </html>

@@ -18,14 +18,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title>瑞蓝酒店管理 - 500错误</title>
+    <title>一卡通 - 500错误</title>
 
     <link rel="shortcut icon" href="favicon.ico">
-    <link href="<%=path%>/static/css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
-    <link href="<%=path%>/static/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="<%=path%>/css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
+    <link href="<%=path%>/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
 
-    <link href="<%=path%>/static/css/animate.min.css" rel="stylesheet">
-    <link href="<%=path%>/static/css/style.min.css?v=4.0.0" rel="stylesheet">
+    <link href="<%=path%>/css/animate.min.css" rel="stylesheet">
+    <link href="<%=path%>/css/style.min.css?v=4.0.0" rel="stylesheet">
     <base target="_blank">
 
 </head>
@@ -38,11 +38,11 @@
     <div class="error-desc">
         服务器好像出错了...
         <br/>您可以返回主页看看
-        <br/><a href="index.html" class="btn btn-primary m-t">主页</a>
+        <br/><a href="/" class="btn btn-primary m-t">主页</a>
     </div>
 </div>
-<script src="<%=path%>/static/js/jquery.min.js?v=2.1.4"></script>
-<script src="<%=path%>/static/js/bootstrap.min.js?v=3.3.5"></script>
+<script src="<%=path%>/js/jquery.min.js?v=2.1.4"></script>
+<script src="<%=path%>/js/bootstrap.min.js?v=3.3.5"></script>
 <script type="text/javascript" src="http://tajs.qq.com/stats?sId=9051096" charset="UTF-8"></script>
 </body>
 

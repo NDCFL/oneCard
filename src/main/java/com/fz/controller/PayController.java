@@ -30,10 +30,15 @@ public class PayController {
     private OrderItemsService orderItemsService;
 
     @RequestMapping("index")
+    public void index(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+        resp.sendRedirect(WechatAPI.ACCESS_LOGIN_URL);
+    }
+
+    @RequestMapping("pay")
     public String pay(HttpServletRequest req, HttpServletResponse resp, HttpSession session, BigDecimal userMoney,long id) throws IOException, ServletException {
         int code = Dll.macIsOnLine();
         req.setAttribute("status", code);
-        if (userMoney != BigDecimal.valueOf(0) && code==1) {
+        if (userMoney != BigDecimal.valueOf(0)) {
             UsersVo usersVo = usersService.queryById(id);
             WechatUtil wechatUtil = new WechatUtil();
             Map<String, String> prepayResult = wechatUtil.prepayResult(usersVo.getOpenid(), req.getRemoteAddr(), "一卡通充值-微信支付",userMoney);

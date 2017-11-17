@@ -30,6 +30,7 @@
     <orderEntry type="library" scope="PROVIDED" name="Tomcat 8.0.47" level="application_server_libraries" />
     <orderEntry type="library" name="core" level="project" />
     <orderEntry type="library" name="sqljdbc4" level="project" />
+    <orderEntry type="library" name="JNative" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:4.3.10.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:4.3.10.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:4.3.10.RELEASE" level="project" />
@@ -110,6 +111,5 @@
     <orderEntry type="library" name="Maven: org.slf4j:jcl-over-slf4j:1.7.7" level="project" />
     <orderEntry type="library" name="Maven: net.java.dev.jna:jna:4.1.0" level="project" />
     <orderEntry type="library" name="Maven: net.java.dev.jna:platform:3.5.2" level="project" />
-    <orderEntry type="library" name="JNative" level="project" />
   </component>
 </module>

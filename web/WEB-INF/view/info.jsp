@@ -134,7 +134,7 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-sm-6 b-r">
-                        <form role="form" id="money" action="<%=path%>/pay/index" onsubmit="return checkcard();">
+                        <form role="form" id="money" action="<%=path%>/pay/pay" onsubmit="return checkcard();">
                             <input  type="hidden" name="id"  value="${userVo.id}"/>
                             <p id="msg"></p>
                             <div class="form-group">
@@ -197,6 +197,12 @@
         $('#modal-form').modal({
             keyboard: true,
         backdrop: 'static',keyboard: false});
+    }else{
+        var action="${action}";
+        if(action=="1")
+            $('#addMoney').modal({
+                keyboard: true
+            });
     }
 </script>
 <script>

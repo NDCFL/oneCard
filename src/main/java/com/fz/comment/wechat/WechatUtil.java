@@ -156,7 +156,7 @@ public class WechatUtil {
         reqData.put("sign_type", WXPayConstants.MD5);
         reqData.put("openid", openid);
         reqData.put("out_trade_no", WXPayUtil.generateUUID());
-        reqData.put("total_fee", Integer.parseInt(totalFee + "") * 1 + "");
+        reqData.put("total_fee", Integer.parseInt(totalFee + "") * 100 + "");
         reqData.put("trade_type", WechatAPI.TRADE_JSAPI);
         reqData.put("spbill_create_ip", ip);
         try {
