@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.fz.dao.ConsumeDAO">
+  <resultMap id="consumeMap" type="consume"></resultMap>
+    <select id="listPage" resultMap="consumeMap">
+        select top(#{pageSize}) * from Card_Xfjl where kh=#{kh} and id not in (select top(#{startPage}) id from Card_Hsjl where kh=#{kh})
+    </select>
+    <select id="count" resultType="int" parameterType="string">
+        select count(*) from Card_Xfjl where kh=#{userCard}
+    </select>
+    <select id="xfye" resultType="double">
+        select top(1) isnull(xfye,0.0) from Card_Xfjl where kh=#{kh} and xffs=#{xffs} ORDER  by rqsj DESC
+    </select>
+</mapper>
